@@ -50,7 +50,6 @@ def cadastrar_beyblade():
             else:
                break
             
-
         while True:
             try:
                 quantidade = int(input("Quantidade em estoque: "))
@@ -66,6 +65,17 @@ def cadastrar_beyblade():
 
 def main():
     print(tit)
-    cadastrar_beyblade()
+    while True:
+        try:
+         esc = int(input("Qual operação deseja realizar? (0-5)"))
+         if esc < 0 or esc > 5:
+            print("Escolha uma opção entre 0 e 5.")
+        except ValueError:
+            print("Insira um valor válido")
+        else:
+            break
+    
+    if esc == 1:
+     cadastrar_beyblade()
 
 main()
