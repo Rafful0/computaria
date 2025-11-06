@@ -11,7 +11,7 @@ BEYSALES - Gerente de Estoque
 5 - Relatório por Tipo
 0 - Sair 
 """
-
+ 
 def tentar_novamente():
     while True:
         t = input("Deseja rodar o programa novamente? (S/N) ")
