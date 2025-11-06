@@ -49,7 +49,7 @@ def cadastrar_beyblade():
              print("Nome não pode ser vazio. Tente novamente.")
             elif nome in [line.split(",")[2] for line in open("beysales.txt", "r", encoding="utf-8").readlines()]:
              print("Nome já existe. Tente novamente ou atualize o beyblade.")
-            elif nome.isalpha() == False:
+            elif not all(ch.isalpha() or ch.isspace() for ch in nome):
              print("Nome deve conter apenas letras. Tente novamente.") 
             else:
              break
@@ -96,7 +96,4 @@ def main():
                print("Fim do programa!")
                break
             
-    
-
-
 main()
