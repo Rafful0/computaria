@@ -20,6 +20,7 @@ def tentar_novamente():
             print(tit)
             return True
         elif t.lower() == "n":
+         os.system("cls")
          print("Fim do programa")
          return False
          
@@ -109,7 +110,6 @@ def main():
             if esc == 1:
                 cadastrar_beyblade()
                 if not tentar_novamente():
-                   os.system("cls")
                    break
             elif esc == 0:
                os.system("cls")
