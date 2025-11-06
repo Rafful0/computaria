@@ -54,7 +54,7 @@ def cadastrar_beyblade():
             if nome.strip() == "":
              os.system("cls")
              print("Nome não pode ser vazio. Tente novamente.")
-            elif nome in [line.split(",")[2] for line in open("beysales.txt", "r", encoding="utf-8").readlines()]:
+            elif nome.lower() in [line.split(",")[2].strip().lower() for line in open("beysales.txt", "r", encoding="utf-8").readlines()]:
              os.system("cls")
              print("Nome já existe. Tente novamente ou atualize o beyblade.")
             elif not all(ch.isalpha() or ch.isspace() for ch in nome):
@@ -111,7 +111,6 @@ def main():
                 if not tentar_novamente():
                    os.system("cls")
                    break
-
             elif esc == 0:
                os.system("cls")
                print("Fim do programa!")
