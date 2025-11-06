@@ -11,6 +11,20 @@ BEYSALES - Gerente de Estoque
 5 - Relatório por Tipo
 0 - Sair 
 """
+
+def tentar_novamente():
+    while True:
+        t = input("Deseja rodar o programa novamente? (S/N)")
+        if t.lower() == "s":
+            return True
+        elif t.lower() == "n":
+         print("Fim do programa")
+         return False
+         
+        else:
+         print("Insira uma resposta válida")
+
+
 def cadastrar_beyblade():
     with open("beysales.txt", "a+", encoding="utf-8") as f:
         while True:
@@ -73,9 +87,16 @@ def main():
         except ValueError:
             print("Insira um valor válido")
         else:
-            break
+            if esc == 1:
+                cadastrar_beyblade()
+                if not tentar_novamente():
+                   break
+
+            elif esc == 0:
+               print("Fim do programa!")
+               break
+            
     
-    if esc == 1:
-     cadastrar_beyblade()
+
 
 main()
