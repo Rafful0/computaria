@@ -1,1 +1,1 @@
-Trabalho de software entregue ao Professor Luíz Carlos
+Trabalho em grupo desenvolvido em python entregue ao Professor Luíz Carlos
