@@ -42,7 +42,7 @@ def cadastrar_beyblade():
          
         while True:
             tipo = input("Tipo (Ataque, Defesa, Equilíbrio): ")
-            if tipo not in [line.split(",")[1] for line in open("beysales.txt", "r", encoding="utf-8").readlines()]:
+            if tipo.lower() not in ["ataque","defesa","equilibrio","equilíbrio"]:
              os.system("cls")
              print("Tipo inválido. Tente novamente.")
             else:
