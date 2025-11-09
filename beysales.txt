@@ -1,5 +1,0 @@
-1727,Ataque,Valkyrie Turbo,89.90,10
-1885,Defesa,Kerbeus Guard,74.50,5
-4932,Equilíbrio,Spriggan Requiem,99.00,8
-3445,Ataque,Dragon Vortex,85.00,12
-5983,Defesa,Phoenix Shield,92.30,6
