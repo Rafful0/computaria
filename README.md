@@ -1,1 +1,0 @@
-Trabalho em grupo desenvolvido em python entregue ao Professor Luíz Carlos
