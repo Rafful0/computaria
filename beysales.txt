@@ -1,0 +1,5 @@
+1727,Ataque,Valkirye Turbo,89.9,10
+1885,Defesa,Kerbeus Guard,74.5,5
+4932,Equilíbrio,Spriggan Requiem,99.0,8
+3445,Ataque,Dragon Vortex,85.0,12
+5983,Defesa,Phoenix Shield,92.3,6
